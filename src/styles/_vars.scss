@@ -1,0 +1,23 @@
+/* breakpoints */
+$mobile: 375px;
+$desktop: 1440px;
+
+/* colors */
+$elements: (
+  light: hsl(0, 0%, 100%),
+  dark: hsl(209, 23%, 22%),
+);
+$background: (
+  light: hsl(0, 0%, 98%),
+  dark: hsl(207, 26%, 17%),
+);
+$text: (
+  light: hsl(200, 15%, 8%),
+  dark: hsl(0, 0%, 100%),
+);
+
+/* typography */
+$font-size: (
+  home: 14px,
+  detail: 16px,
+);
