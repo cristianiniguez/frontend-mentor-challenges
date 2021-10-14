@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
+import { FaMoon, FaRegMoon } from 'react-icons/fa';
 
 import useDarkMode from '../../hooks/useDarkMode';
 import './styles.scss';
 
 const Header = () => {
-  const { switchDark } = useDarkMode();
+  const { dark, switchDark } = useDarkMode();
 
   return (
     <header className='header'>
@@ -13,7 +14,8 @@ const Header = () => {
           Where in the world?
         </Link>
         <button className='header__theme-switcher' onClick={switchDark}>
-          Dark Mode
+          {dark ? <FaMoon /> : <FaRegMoon />}
+          <span>Dark Mode</span>
         </button>
       </div>
     </header>

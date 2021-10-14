@@ -13,10 +13,13 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: var(--background);
   color: var(--text);
+  font-size: map-get($font-size, home);
 }
 
 a {
   @include a-norm;
+  font-weight: 800;
 }

@@ -1,11 +1,26 @@
+@import '../../styles/globals';
+
 .header {
   padding: 0 1em;
+  background-color: var(--elements);
+  box-shadow: $shadow;
 
   &__container {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 2em 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  &__theme-switcher {
+    @include btn-norm;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 1em;
+    }
   }
 }

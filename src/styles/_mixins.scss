@@ -10,3 +10,10 @@
   color: currentColor;
   text-decoration: none;
 }
+
+@mixin btn-norm {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: currentColor;
+}
