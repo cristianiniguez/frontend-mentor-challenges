@@ -10,6 +10,7 @@
 
 html {
   font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -22,4 +23,8 @@ body {
 a {
   @include a-norm;
   font-weight: 800;
+}
+
+section {
+  padding: 2em;
 }

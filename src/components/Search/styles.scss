@@ -1,0 +1,21 @@
+@import '../../styles/globals';
+
+.search {
+  background-color: var(--elements);
+  box-shadow: $shadow;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin: 0 1.5em;
+    opacity: 0.5;
+  }
+
+  &__input {
+    @include input-norm;
+    flex-grow: 1;
+  }
+}

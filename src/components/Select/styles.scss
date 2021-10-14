@@ -1,0 +1,33 @@
+@import '../../styles/globals';
+
+.select {
+  position: relative;
+  font-size: 12px;
+  width: 150px;
+
+  &__box {
+    background-color: var(--elements);
+    box-shadow: $shadow;
+    margin-bottom: 2em;
+    border-radius: 4px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__options {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background-color: var(--elements);
+    box-shadow: $shadow;
+    border-radius: 4px;
+    padding: 1em 0;
+  }
+
+  &__opt {
+    padding: 0.25em 1em;
+  }
+}

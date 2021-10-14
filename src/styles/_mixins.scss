@@ -17,3 +17,9 @@
   background-color: transparent;
   color: currentColor;
 }
+
+@mixin input-norm {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
