@@ -1,7 +1,22 @@
+@import-normalize;
+@import './globals';
+
+:root {
+  /* the colors are in _vars.scss */
+  @include set-dark-colors('elements', $elements);
+  @include set-dark-colors('background', $background);
+  @include set-dark-colors('text', $text);
+}
+
 html {
   font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
-  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+a {
+  @include a-norm;
 }
