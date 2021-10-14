@@ -1,0 +1,12 @@
+@mixin set-dark-colors($name, $colors) {
+  #{'--' + $name}: map-get($colors, light);
+
+  &.dark {
+    #{'--' + $name}: map-get($colors, dark);
+  }
+}
+
+@mixin a-norm {
+  color: currentColor;
+  text-decoration: none;
+}

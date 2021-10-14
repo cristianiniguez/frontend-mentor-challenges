@@ -1,0 +1,11 @@
+.header {
+  padding: 0 1em;
+
+  &__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
