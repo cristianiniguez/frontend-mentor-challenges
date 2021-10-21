@@ -1,0 +1,20 @@
+@import '../../styles/globals';
+
+.card {
+  background-color: var(--elements);
+  box-shadow: $shadow;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 1em;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+}
