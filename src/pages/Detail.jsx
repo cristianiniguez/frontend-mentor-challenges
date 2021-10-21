@@ -1,12 +1,16 @@
 import Back from '../components/Back';
+import Info from '../components/Info';
+import useCountry from '../hooks/useCountry';
 
 const Detail = (props) => {
-  console.log(props);
+  const country = useCountry(props.match.params.code);
+  console.log(country);
 
   return (
     <section>
       <div className='container'>
         <Back />
+        {country && <Info {...country} />}
       </div>
     </section>
   );

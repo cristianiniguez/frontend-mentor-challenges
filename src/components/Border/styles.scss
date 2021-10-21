@@ -1,0 +1,8 @@
+@import '../../styles/globals';
+
+.border {
+  background-color: var(--elements);
+  box-shadow: $shadow;
+  text-align: center;
+  padding: 0.5rem;
+}

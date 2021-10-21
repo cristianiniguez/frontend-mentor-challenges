@@ -1,0 +1,18 @@
+.info {
+  margin: 2rem 0;
+
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__part {
+    margin: 3em 0;
+  }
+
+  &__borders-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
