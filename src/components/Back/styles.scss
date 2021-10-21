@@ -1,0 +1,17 @@
+@import '../../styles/globals';
+
+.back {
+  width: 100px;
+  background-color: var(--elements);
+  padding: 0.25rem 0.5rem;
+  box-shadow: $shadow;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    margin: 0.5rem;
+  }
+}
