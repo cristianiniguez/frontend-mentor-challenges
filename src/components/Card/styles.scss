@@ -6,8 +6,18 @@
   border-radius: 4px;
   overflow: hidden;
 
-  &__img {
-    width: 100%;
+  &__flag {
+    @include figure-norm;
+
+    img {
+      display: block;
+      width: 100%;
+
+      @include desktop {
+        aspect-ratio: 2;
+        object-fit: cover;
+      }
+    }
   }
 
   &__info {

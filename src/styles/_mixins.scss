@@ -26,6 +26,10 @@
   background-color: transparent;
 }
 
+@mixin figure-norm {
+  margin: 0;
+}
+
 @mixin desktop {
   @media (min-width: $desktop) {
     @content;

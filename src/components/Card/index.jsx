@@ -6,7 +6,9 @@ import './styles.scss';
 const Card = ({ name, alpha2Code, flags, population, region, capital }) => {
   return (
     <Link to={`/detail/${alpha2Code.toLowerCase()}`} className='card'>
-      <img className='card__img' src={flags.svg} alt={`Bandera de ${name}`} />
+      <figure className='card__flag'>
+        <img src={flags.svg} alt={`Bandera de ${name}`} />
+      </figure>
       <div className='card__info'>
         <h2>{name}</h2>
         <p>
