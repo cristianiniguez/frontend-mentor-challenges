@@ -18,26 +18,32 @@ const Info = ({
 }) => {
   return (
     <div className='info'>
-      <img src={flags.svg} alt={`Bandera de ${name}`} />
-      <h1>{name}</h1>
-      <div className='info__part'>
-        <Entry name='Native Name' value={nativeName} />
-        <Entry name='Population' value={population} />
-        <Entry name='Region' value={region} />
-        <Entry name='Sub Region' value={subregion} />
-        <Entry name='Capital' value={capital} />
-      </div>
-      <div className='info__part'>
-        <Entry name='Top Level Domain' value={topLevelDomain} />
-        <Entry name='Currencies' value={currencies.map(({ name }) => name).join(', ')} />
-        <Entry name='Languages' value={languages.map(({ name }) => name).join(', ')} />
-      </div>
-      <div className='info__borders'>
-        <h3>Border Countries</h3>
-        <div className='info__borders-container'>
-          {borders.slice(0, 3).map((code) => (
-            <Border key={`border-${code}`} code={code.toLowerCase()} />
-          ))}
+      <figure className='info__flag'>
+        <img src={flags.svg} alt={`Bandera de ${name}`} />
+      </figure>
+      <div className='info__content'>
+        <h1>{name}</h1>
+        <div className='info__parts'>
+          <div className='info__part'>
+            <Entry name='Native Name' value={nativeName} />
+            <Entry name='Population' value={population} />
+            <Entry name='Region' value={region} />
+            <Entry name='Sub Region' value={subregion} />
+            <Entry name='Capital' value={capital} />
+          </div>
+          <div className='info__part'>
+            <Entry name='Top Level Domain' value={topLevelDomain} />
+            <Entry name='Currencies' value={currencies.map(({ name }) => name).join(', ')} />
+            <Entry name='Languages' value={languages.map(({ name }) => name).join(', ')} />
+          </div>
+        </div>
+        <div className='info__borders'>
+          <h3>Border Countries</h3>
+          <div className='info__borders-container'>
+            {borders.slice(0, 3).map((code) => (
+              <Border key={`border-${code}`} code={code.toLowerCase()} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

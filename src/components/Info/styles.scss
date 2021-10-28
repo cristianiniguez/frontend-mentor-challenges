@@ -1,18 +1,60 @@
+@import '../../styles/globals';
+
 .info {
   margin: 2rem 0;
 
-  img {
-    width: 100%;
-    margin-bottom: 1rem;
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__flag {
+    @include figure-norm;
+    margin-bottom: 2rem;
+
+    @include desktop {
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__parts {
+    @include desktop {
+      margin-bottom: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
   }
 
   &__part {
     margin: 3em 0;
+
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  &__borders {
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__borders-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    @include desktop {
+      margin-left: 1rem;
+    }
   }
 }
