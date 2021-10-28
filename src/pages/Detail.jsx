@@ -3,7 +3,7 @@ import Info from '../components/Info';
 import useCountry from '../hooks/useCountry';
 
 const Detail = (props) => {
-  const country = useCountry(props.match.params.code);
+  const { country } = useCountry(props.match.params.code);
 
   return (
     <section>

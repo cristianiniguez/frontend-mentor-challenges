@@ -4,7 +4,7 @@ import useCountry from '../../hooks/useCountry';
 import './styles.scss';
 
 const Border = ({ code }) => {
-  const country = useCountry(code);
+  const { country } = useCountry(code);
 
   return country ? (
     <Link to={`/detail/${code}`} className='border'>
