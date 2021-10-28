@@ -4,14 +4,16 @@ import useCountry from '../../hooks/useCountry';
 import './styles.scss';
 
 const Border = ({ code }) => {
-  const { country } = useCountry(code);
+  const { country, loading, error } = useCountry(code);
 
-  return country ? (
+  return error ? (
+    <div className='border'>❌</div>
+  ) : loading || !country ? (
+    <div className='border'>...</div>
+  ) : (
     <Link to={`/detail/${code}`} className='border'>
       {country.name}
     </Link>
-  ) : (
-    <div className='border'>...</div>
   );
 };
 
