@@ -4,12 +4,24 @@ import { getAllCountries } from '../api';
 
 const useCountries = () => {
   const [countries, setCountries] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    getAllCountries().then((data) => setCountries(data));
+    setLoading(true);
+    getAllCountries()
+      .then((data) => {
+        setCountries(data);
+      })
+      .catch((error) => {
+        setError(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
-  return countries;
+  return { countries, loading, error };
 };
 
 export default useCountries;

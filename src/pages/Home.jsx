@@ -1,12 +1,13 @@
 import { useMemo, useState } from 'react';
 
 import Controls from '../components/Controls';
+import Spinner from '../components/Spinner';
 import List from '../components/List';
 
 import useCountries from '../hooks/useCountries';
 
 const Home = () => {
-  const countries = useCountries();
+  const { countries, loading, error } = useCountries();
   const [search, setSearch] = useState('');
   const [region, setRegion] = useState(null);
 
@@ -20,7 +21,13 @@ const Home = () => {
     <section>
       <div className='container'>
         <Controls {...{ search, region }} onChangeSearch={setSearch} onChangeRegion={setRegion} />
-        <List countries={filteredCountries}>Country</List>
+        {error ? (
+          error.message
+        ) : loading ? (
+          <Spinner />
+        ) : (
+          <List countries={filteredCountries}>Country</List>
+        )}
       </div>
     </section>
   );
