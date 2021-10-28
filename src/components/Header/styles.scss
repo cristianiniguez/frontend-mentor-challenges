@@ -17,14 +17,4 @@
   &__link {
     font-weight: 800;
   }
-
-  &__theme-switcher {
-    @include btn-norm;
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-right: 1em;
-    }
-  }
 }

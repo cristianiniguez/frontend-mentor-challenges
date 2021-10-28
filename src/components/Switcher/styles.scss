@@ -1,0 +1,12 @@
+@import '../../styles/globals';
+
+.switcher {
+  @include btn-norm;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 1em;
+  }
+}
