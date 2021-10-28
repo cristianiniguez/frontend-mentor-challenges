@@ -4,6 +4,7 @@
   position: relative;
   font-size: 12px;
   width: 150px;
+  cursor: pointer;
 
   &__box {
     background-color: var(--elements);
@@ -27,6 +28,6 @@
   }
 
   &__opt {
-    padding: 0.25em 1em;
+    padding: 0.5em 1em;
   }
 }
