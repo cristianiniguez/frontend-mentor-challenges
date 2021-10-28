@@ -1,11 +1,9 @@
 import { useMemo, useState } from 'react';
 
-import Search from '../components/Search';
-import Select from '../components/Select';
+import Controls from '../components/Controls';
 import List from '../components/List';
 
 import useCountries from '../hooks/useCountries';
-import Controls from '../components/Controls';
 
 const Home = () => {
   const countries = useCountries();
@@ -13,17 +11,9 @@ const Home = () => {
   const [region, setRegion] = useState(null);
 
   const filteredCountries = useMemo(() => {
-    let filtered = countries;
-
-    if (search) {
-      filtered = filtered.filter(({ name }) => name.match(new RegExp(search, 'i')));
-    }
-
-    if (region) {
-      filtered = filtered.filter((country) => country.region === region);
-    }
-
-    return filtered;
+    return countries
+      .filter((country) => (search ? country.name.match(new RegExp(search, 'i')) : true))
+      .filter((country) => (region ? country.region === region : true));
   }, [countries, region, search]);
 
   return (
