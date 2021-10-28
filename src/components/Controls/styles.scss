@@ -1,0 +1,11 @@
+@import '../../styles/globals';
+
+.controls {
+  margin-bottom: 2rem;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

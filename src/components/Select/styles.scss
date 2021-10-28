@@ -8,7 +8,6 @@
   &__box {
     background-color: var(--elements);
     box-shadow: $shadow;
-    margin-bottom: 2em;
     border-radius: 4px;
     padding: 1em;
     display: flex;
@@ -18,7 +17,7 @@
 
   &__options {
     position: absolute;
-    top: 110%;
+    top: 105%;
     left: 0;
     right: 0;
     background-color: var(--elements);

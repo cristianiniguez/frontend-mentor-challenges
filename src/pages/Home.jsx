@@ -5,6 +5,7 @@ import Select from '../components/Select';
 import List from '../components/List';
 
 import useCountries from '../hooks/useCountries';
+import Controls from '../components/Controls';
 
 const Home = () => {
   const countries = useCountries();
@@ -28,8 +29,7 @@ const Home = () => {
   return (
     <section>
       <div className='container'>
-        <Search value={search} onChange={setSearch} />
-        <Select value={region} onChange={setRegion} />
+        <Controls {...{ search, region }} onChangeSearch={setSearch} onChangeRegion={setRegion} />
         <List countries={filteredCountries}>Country</List>
       </div>
     </section>

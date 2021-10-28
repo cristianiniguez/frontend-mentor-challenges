@@ -9,6 +9,11 @@
   display: flex;
   align-items: center;
 
+  @include desktop {
+    margin-bottom: 0;
+    width: 350px;
+  }
+
   &__icon {
     margin: 0 1.5em;
     opacity: 0.5;
