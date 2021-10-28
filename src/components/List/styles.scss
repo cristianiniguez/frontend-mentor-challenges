@@ -1,5 +1,12 @@
+@import '../../styles/globals';
+
 .list {
   padding: 1em;
   display: grid;
   gap: 2rem;
+
+  @include desktop {
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
