@@ -1,8 +1,12 @@
 @import '../../styles/globals';
 
 .border {
+  font-size: 0.8rem;
   background-color: var(--elements);
   box-shadow: $shadow;
   text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   padding: 0.5rem;
 }

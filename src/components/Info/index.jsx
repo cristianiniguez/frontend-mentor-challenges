@@ -36,7 +36,7 @@ const Info = ({
         <h3>Border Countries</h3>
         <div className='info__borders-container'>
           {borders.slice(0, 3).map((code) => (
-            <Border code={code.toLowerCase()} />
+            <Border key={`border-${code}`} code={code.toLowerCase()} />
           ))}
         </div>
       </div>

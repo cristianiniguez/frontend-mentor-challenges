@@ -4,7 +4,6 @@ import useCountry from '../hooks/useCountry';
 
 const Detail = (props) => {
   const country = useCountry(props.match.params.code);
-  console.log(country);
 
   return (
     <section>
