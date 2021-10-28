@@ -22,5 +22,10 @@
   &__input {
     @include input-norm;
     flex-grow: 1;
+
+    &::placeholder {
+      color: var(--text);
+      opacity: 0.5;
+    }
   }
 }
