@@ -41,5 +41,18 @@
   },
   "devDependencies": {
     "sass": "^1.43.2"
-  }
+  },
+  "description": "This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianiniguez/rest_countries_api_with_color_theme_switcher.git"
+  },
+  "keywords": [],
+  "author": "cristianiniguez <felizpc1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianiniguez/rest_countries_api_with_color_theme_switcher/issues"
+  },
+  "homepage": "https://criniguez-rest-countries-api-with-color-theme-switcher.netlify.app"
 }
