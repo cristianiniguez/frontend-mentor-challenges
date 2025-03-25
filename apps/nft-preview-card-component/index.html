@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT Preview Card Component</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,37 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <img
-        class="card-image"
-        src="images/image-equilibrium.jpg"
-        alt="Image Equilibrium"
-      />
-      <h1 class="card-title">Equilibrium #3429</h1>
-      <p class="card-description">
-        Our Equilibrium collection promotes balance and calm.
-      </p>
-
-      <div class="card-values">
-        <div class="card-value card-eth">
-          <img src="images/icon-ethereum.svg" alt="" />
-          0.041 ETH
-        </div>
-        <div class="card-value card-days">
-          <img src="images/icon-clock.svg" alt="" />
-          3 days left
-        </div>
-      </div>
-
-      <hr class="card-hr" />
-
-      <div class="card-avatar">
-        <img src="images/image-avatar.png" alt="" />
-        <span> Creation of <span class="card-avatar-name">Jules Wyvern</span> </span>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
